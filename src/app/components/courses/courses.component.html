@@ -5,7 +5,7 @@
         <div class="box-header-title">Courses</div>
         <div class="box-header-button">
           <div class="btn-group btn-group-sm">
-            <div class="btn btn-sm btn-primary-gradient" (click)="getModal(content)">new course</div>
+            <div class="btn btn-sm btn-primary-gradient" (click)="getModal(content)">New Course</div>
           </div>
         </div>
       </div>
@@ -38,12 +38,13 @@
             <td>{{c.courseDuration}}</td>
             <td>{{c.courseDescription}}</td>
             <td>{{c.instructor.firstName}} {{c.instructor.lastName}}</td>
-            <td class="text-left" style="width:10%">
+            <td class="text-left" td style="width: 5%;">
               <button (click)="getUpdateModel(c, updateContent)" class="btn btn-success">
                 <i class="bi bi-pencil-square"></i>
               </button>
-
-              <button (click)="handleDeleteCourse(c)" class="btn btn-danger  ms-4">
+            </td>
+            <td td style="width: 5%;">
+              <button (click)="handleDeleteCourse(c)" class="btn btn-danger">
                 <i class="bi-trash"></i>
               </button>
             </td>
