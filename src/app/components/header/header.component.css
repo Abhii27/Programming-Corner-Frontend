@@ -1,0 +1,10 @@
+.link-button {
+    cursor: pointer; 
+    color: rgb(255, 255, 255); 
+}
+.link-button:hover {
+    color: rgb(161, 255, 216); 
+}
+.custom-muted{
+    color: white;
+}

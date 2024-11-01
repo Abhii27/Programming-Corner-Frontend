@@ -28,6 +28,10 @@ export class InstructorsService {
     return this.http.post<Instructor>(environment.backendHost + "/instructors", instructor);
   }
 
+  public loadInstructorByEmail(email: string): Observable<Instructor> {
+    return this.http.get<Instructor>(environment.backendHost + "/instructors/find?email=" + email)
+  }
+
   public upodateInstructor(instructor: Instructor, instructorId: number): Observable<Instructor>{
     return this.http.put<Instructor>(environment.backendHost+"/courses/"+instructorId,instructor);
   }

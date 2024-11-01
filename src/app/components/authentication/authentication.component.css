@@ -1,0 +1,17 @@
+.card {
+    margin: 300px auto;
+    width: 600px;
+    padding: 10px;
+  }
+  
+  .card-header {
+    background-color: #034fffc5; 
+    border-bottom: 1px solid #dee2e6; 
+    padding: 15px;
+  }
+  
+  .card-header h2 {
+    margin: 0; 
+    font-size: 1.3rem; 
+    color: #ffffff;
+  }
